@@ -29,6 +29,12 @@ data/raw/*.zip
 data/raw/*.gz
 data/processed/*.csv
 data/processed/*.xlsx
+data/processed/*.gz
+data/processed/*.parquet
+data/processed/global_health_enriched.csv.gz
+*.pkl
+*.joblib
+models/
 
 # ── OS files ──────────────────────────────────────────────────────────────────
 .DS_Store
@@ -38,6 +44,24 @@ Thumbs.db
 .vscode/settings.json
 .idea/
 .qodo/
+.claude/
+.github/
 
 # ── Generated chart outputs — do not push ────────────────────────────────────
 docs/charts/
+# ── Test suite ───────────────────────────────────────────────────────────────────────────────
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+test_*/
+tests/
+test_suite_analysis/
+test_suite_analysis
+managed_context/
+managed_context
+
+# Streamlit
+__pycache__/
+.streamlit/
+
